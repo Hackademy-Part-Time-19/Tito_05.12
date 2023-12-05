@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubrica</title>
+    <link rel="stylesheet" href="./rubrica.css">
+    <script src="./rubrica.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+
+    <div id="popupAggiungi">
+        <div id="popup">
+            <div class="campiPopup">
+                <h2>Aggiungi Contatto</h2>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+
+                <label>Cognome</label>
+                <input type="text" name="cognome" id="cognome" placeholder="Cognome">
+
+                <label>Numero di telefono</label>
+                <input type="tel" name="numero" id="telefono" placeholder="Numero di Telefono">
+            </div>
+            <div class="btnPopup">
+                <button onclick="aggiungiContatto()" id="salvaChiudi">Salva</button>
+                <button onclick="chiudiAddContatto()" id="salvaChiudi">Chiudi</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="intestazione">
+        <h1 class="titolo">Rubrica di Vincenzo</h1>
+
+        <img class="imgUser" src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745" alt="">
+
+    </div>
+    <div class="container">
+            <div class="interfaccia">
+                <div class="ricerca">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                        <input onkeyup="cercaContatto()" type="text" name="" id="inputRicerca"
+                            placeholder="Cerca in Contatti">
+                    </div>
+
+                    <span onclick="apriAddContatto()" id="aggiungiContatto" class="material-symbols-outlined">
+                        person_add
+                    </span>
+
+                    
+                
+            </div>
+
+
+
+        <div id="listaContatti"></div>
+
+
+    </div>
+
+</body>
+
+</html>
